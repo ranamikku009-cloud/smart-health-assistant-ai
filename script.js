@@ -12,7 +12,7 @@ async function askAI() {
   const API_KEY = "rsk_01KX5RDKGVCKJGD0NVKPEBXVBS";
 
   try {
-    const response = await fetch("https://api.meshy.ai/v1/chat/completions", {
+    const response = await fetch("https://api.meshapi.ai/v1/chat/completions",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",
