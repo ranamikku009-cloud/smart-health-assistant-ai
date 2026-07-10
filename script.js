@@ -33,7 +33,7 @@ async function askAI() {
       })
     });
 
-    const data = await response.json();
+   const data = await response.json();
 
 if (!response.ok) {
   output.innerHTML = "❌ " + (data.error?.message || "API Error");
