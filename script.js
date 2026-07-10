@@ -3,7 +3,7 @@ async function askAI() {
   const output = document.getElementById("answer");
 
   if (input.trim() === "") {
-    output.innerHTML = "⚠️ I have a fever.";
+    output.innerHTML = "⚠️ Please enter a health question.";
     return;
   }
 
