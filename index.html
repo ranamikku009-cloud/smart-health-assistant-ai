@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smart Health Assistant AI</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Health Assistant AI</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<h1>Smart Health Assistant AI</h1>
+    <h1>🩺 Smart Health Assistant AI</h1>
 
-<p>Welcome to Smart Health Assistant.</p>
+    <p>Ask your health-related question below.</p>
 
-<input type="text" placeholder="Type your health question">
+    <input
+        type="text"
+        id="question"
+        placeholder="Type your health question">
 
-<button>Ask AI</button>
+    <br><br>
+
+    <button onclick="askAI()">Ask AI</button>
+
+    <p id="answer"></p>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
