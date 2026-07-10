@@ -35,9 +35,9 @@ async function askAI() {
 
     const data = await response.json();
 
-    output.innerHTML = data.choices[0].message.content;
-
-  } catch (error) {
-    output.innerHTML = "❌ Error: " + error.message;
-  }
+if (!response.ok) {
+  output.innerHTML = "❌ " + (data.error?.message || "API Error");
+  return;
 }
+
+output.innerHTML = data.choices[0].message.content;
