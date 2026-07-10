@@ -9,7 +9,7 @@ async function askAI() {
 
   output.innerHTML = "⏳ Thinking...";
 
-  const API_KEY = " rsk_01KX5GDBAVA9A34WPCEWYNBCE4";
+  const API_KEY = "rsk_01KX5H29ZEWNJ8TEPH54ZX2DT3 ";
 
   try {
     const response = await fetch("https://api.meshy.ai/v1/chat/completions", {
